@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Game Of Life</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="smallscreen">
+      <h1>This application only runs at desktop screens.</h1>
+    </div>
+    <div id="app">
+      <canvas id="canvas" width="1200" height="800"></canvas>
+      <div class="controls">
+        <label for="speed">Enter Simulation Speed in Milliseconds</label>
+        <input type="number" min="150" max="10000" value="150" id="speed">
+        <button id="btn" class="btn" type="button" name="button">Start</button>
+        <button id="clr" class="btn" type="button" name="button">Clear</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>

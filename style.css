@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+.smallscreen {display: none;}
+
+#app {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#canvas {
+  background-color: #ddd;
+  border: 1px solid #555;
+}
+
+.btn {
+  background: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  outline: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  border: 1px solid orange;
+}
+
+@media screen and (max-width: 768px) {
+  #app {display: none;}
+  .smallscreen  {display: block;}
+}
